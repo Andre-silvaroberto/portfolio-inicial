@@ -3,31 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Primeiro Portfólio</title>
+    <title>Meu Portfólio</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            text-align: center;
-            padding: 50px;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .card {
-            background: white;
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #1e293b;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #38bdf8;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #94a3b8;
+            font-size: 1.1rem;
+        }
+        section {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #334155;
+        }
+        h2 {
+            color: #f8fafc;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 10px;
+            color: #cbd5e1;
+        }
+        .project-card {
+            background: #0f172a;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-            display: inline-block;
+            margin-top: 15px;
+            border-left: 4px solid #38bdf8;
         }
-        h1 { color: #333; }
-        p { color: #666; }
+        .project-card h3 {
+            color: #38bdf8;
+            margin-bottom: 5px;
+        }
     </style>
 </head>
 <body>
 
-    <div class="card">
-        <h1>Olá, mundo! 🚀</h1>
-        <p>Este é o meu primeiro projeto publicado no GitHub.</p>
-        <p>Estou aprendendo HTML, CSS, Git e programação.</p>
+    <div class="container">
+        <header>
+            <h1>Olá, mundo! 🚀</h1>
+            <p class="subtitle">Bem-vindo ao meu portfólio oficial de estudos em tecnologia.</p>
+        </header>
+
+        <section>
+            <h2>👨‍💻 Sobre Mim</h2>
+            <p>Olá! Estou focado em aprender programação, desenvolvimento web e automação. Busco sempre evoluir meus conhecimentos práticos criando projetos reais do zero e entendendo como a tecnologia funciona por trás dos panos.</p>
+        </section>
+
+        <section>
+            <h2>💼 Meus Projetos</h2>
+            
+            <div class="project-card">
+                <h3>Portfólio Inicial</h3>
+                <p>Meu primeiro projeto publicado na internet usando HTML, CSS, Git e GitHub Pages.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Scripts em Python</h3>
+                <p>Automatizações e exercícios práticos desenvolvidos para resolver problemas do dia a dia e fixar a lógica de programação.</p>
+            </div>
+        </section>
     </div>
 
 </body>
+</html>
